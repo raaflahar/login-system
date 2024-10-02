@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Login, Registration Form Start */
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form-container {
+  justify-content: center;
+  align-items: center;
+  margin: 120px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+label#remember_me {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#remember_me input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Login, Registration End */
+
+/* Dashboard Start */
+#dashboard-container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Latar belakang semi-transparan */
+  padding: 20px;
+  border-radius: 15px; /* Membuat sudut-sudut membulat */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan lembut */
+  text-align: center; /* Semua konten di dalam container berpusat */
+  width: 500px; /* Lebar container */
+  margin: 50px;
+}
+
+#dashboard-h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Memberikan spasi di antara huruf */
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: white; /* Garis putih tipis */
+  margin: 20px 0;
+}
+
+#dashboard-p {
+  font-size: 1.2rem;
+  line-height: 1.6; /* Jarak antar baris yang nyaman */
+  margin-bottom: 15px;
+}
+
+#dashboard-p i {
+  margin-left: 5px;
+}
+
+#dashboard-p i.fas.fa-heart {
+  animation: beat 1s infinite; /* Efek animasi untuk ikon hati */
+}
+
+/* Animasi ikon hati */
+@keyframes beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+/* Dashboard End */
+
+/* Footer */
+
+footer {
+  background-color: #5cb85c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #4cae4c; /* Warna saat hover */
+}
